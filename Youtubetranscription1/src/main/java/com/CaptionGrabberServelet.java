@@ -1,0 +1,88 @@
+package com;
+
+import java.io.IOException;
+
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.jsoup.nodes.Document;
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+
+@WebServlet("/CaptionGrabberServelet")
+public class CaptionGrabberServelet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+   
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		 HttpSession session = request.getSession();
+		 PrintWriter out= response.getWriter();
+		try {
+			
+//			session.removeAttribute("text");
+//			session.removeAttribute("videoUrl");
+			
+			
+			
+			String videoUrl=request.getParameter("videoUrl");
+			
+			session.setAttribute("videoUrl", videoUrl);
+			
+			String videoId= videoUrl.substring(videoUrl.indexOf("=")+1);
+			
+			
+            // Request the website
+            String url = "https://www.captionsgrabber.com/8302/display-captions-as-text.00.php?id="+videoId+"&language=en"; 
+            int timeoutMilliseconds = 10000; // Increase the timeout to 10 seconds
+            
+            Document document = Jsoup.connect(url).timeout(timeoutMilliseconds).get();
+
+            // Extract the text from the specific HTML element
+            Elements element = document.select("div#text");
+            String text = element.text();
+            if (element != null ) {
+               
+                
+                
+                
+                session.setAttribute("text",text);
+                
+                //out.println(text);
+
+             response.sendRedirect("Result.jsp");
+                
+                
+            }
+            else {
+            	
+                out.println("Element not found.");
+            }
+        } catch (IOException e) {
+        	
+            e.printStackTrace();
+           
+            out.println("Server error OR caption may not avilable on that video");
+        }
+		
+
+
+}
+}

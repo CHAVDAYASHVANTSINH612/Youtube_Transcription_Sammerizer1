@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <description></description>
+    <display-name>DownlodAudio</display-name>
+    <servlet-name>DownlodAudio</servlet-name>
+    <servlet-class>com.downlodaudio.DownlodAudio</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownlodAudio</servlet-name>
+    <url-pattern>/DownlodAudio</url-pattern>
+  </servlet-mapping>
+  <display-name>Youtubetranscription1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>GetYoutubeTranscription</display-name>
+    <servlet-name>GetYoutubeTranscription</servlet-name>
+    <servlet-class>com.GetYoutubeTranscription</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetYoutubeTranscription</servlet-name>
+    <url-pattern>/GetYoutubeTranscription</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OAuth2Servlet</display-name>
+    <servlet-name>OAuth2Servlet</servlet-name>
+    <servlet-class>com.OAuth2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OAuth2Servlet</servlet-name>
+    <url-pattern>/OAuth2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Test1_using_Guidecode</display-name>
+    <servlet-name>Test1_using_Guidecode</servlet-name>
+    <servlet-class>com.Test1_using_Guidecode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test1_using_Guidecode</servlet-name>
+    <url-pattern>/Test1_using_Guidecode</url-pattern>
+  </servlet-mapping>
+  
+  
+ 
+</web-app>
