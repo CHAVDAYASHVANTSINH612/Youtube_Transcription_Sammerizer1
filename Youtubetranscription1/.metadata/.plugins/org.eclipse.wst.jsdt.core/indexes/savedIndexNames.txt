@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\Asus\Documents\GitHub\Youtube-Transcription-Summerizer\Youtube-Transcription-Summerizer\Youtubetranscription1\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+874418179.index
+461532094.index
+1526962864.index
+4058573752.index
+488685037.index

@@ -1,0 +1,3 @@
+INDEX VERSION 1.132
+C:\Users\Asus\Documents\GitHub\Youtube-Transcription-Summerizer\Youtube-Transcription-Summerizer\Youtubetranscription1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2710722715.index
+\Youtubetranscription1\src\main\java
