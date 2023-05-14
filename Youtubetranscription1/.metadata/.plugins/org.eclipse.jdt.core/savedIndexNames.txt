@@ -1,4 +1,5 @@
 INDEX VERSION 1.132+C:\Users\Asus\Documents\GitHub\Youtube-Transcription-Summerizer\Youtube-Transcription-Summerizer\Youtubetranscription1\.metadata\.plugins\org.eclipse.jdt.core
+1278945724.index
 75931715.index
 2847844662.index
 3324048787.index
@@ -8,11 +9,12 @@ INDEX VERSION 1.132+C:\Users\Asus\Documents\GitHub\Youtube-Transcription-Summeri
 2639363432.index
 936611050.index
 2287672110.index
-2135183890.index
+2578646136.index
 4267286210.index
 2793084555.index
-2578646136.index
+2135183890.index
 2727116467.index
+461532094.index
 2575852033.index
 2173757347.index
 1591867118.index
