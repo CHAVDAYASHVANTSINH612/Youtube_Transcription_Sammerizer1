@@ -2,6 +2,7 @@ INDEX VERSION 1.4+C:\Users\Asus\Documents\GitHub\Youtube-Transcription-Summerize
 874418179.index
 461532094.index
 1526962864.index
+2710722715.index
 4058573752.index
 488685037.index
 978690400.index

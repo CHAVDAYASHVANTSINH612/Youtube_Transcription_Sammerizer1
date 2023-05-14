@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Transcript Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+   
+     <header>
+        <div class="logo">
+          <a href="#">Youtube Transcript Summarizer</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+
+      <section class="body-section">
+        <div class="container">
+          <h1>Enter URL</h1>
+          <form action="CaptionGrabberServelet" method="GET">
+            <input type="text" id="videoUrl" name="videoUrl" placeholder="Paste your URL here">
+            <button type="submit">Submit</button>
+          </form>
+          <!-- <p>Cover photo link</p> -->
+        </div>
+        
+      </section>
+      
+   <script src="app.js"></script> 
+    
+    
+    
+    
+    
+    
+</body>
+</html>
