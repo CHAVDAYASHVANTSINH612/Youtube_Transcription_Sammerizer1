@@ -13,7 +13,6 @@ INDEX VERSION 1.132+C:\Users\Asus\Documents\GitHub\Youtube-Transcription-Summeri
 2793084555.index
 2578646136.index
 2727116467.index
-461532094.index
 2575852033.index
 2173757347.index
 1591867118.index
