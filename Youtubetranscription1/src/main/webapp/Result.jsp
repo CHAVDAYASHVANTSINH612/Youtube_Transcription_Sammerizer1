@@ -64,13 +64,13 @@
 
     <header>
         <div class="logo">
-          <a href="#">Youtube Transcript Summarizer</a>
+          <a href="index.jsp">Youtube Transcript Summarizer</a>
         </div>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.jsp">Home</a></li>
+            <li><a href="about.jsp">About</a></li>
+            <li><a href="contact.jsp">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -78,14 +78,21 @@
       <div id="player"></div>
       
       
-          <h2 id="transcription">Full transcription of Video</h2>
+          <h2 id="transcription">Summary Of Video</h2>
       
-      <textarea id="textarea" name="text" rows="20" cols="50"><%= session.getAttribute("text") %></textarea>
+      <textarea id="textarea" name="text" rows="7" cols="30"><%= session.getAttribute("summary") %></textarea>
       
-      
-      <button><a href="/Youtubetranscription1/index.jsp">back</a></button>
+      <br>
+      <br>
+      <br>
 
-
+  <h2 id="transcription">Full-Transcription of Video</h2>
+      
+      <textarea id="textarea" name="text" rows="40" cols="50"><%= session.getAttribute("text") %></textarea>
+      
+        <br>
+      
+<button><a href="/Youtubetranscription1/index.jsp">back</a></button>
 
 
 </body>

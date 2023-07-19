@@ -11,17 +11,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
 </head>
-<body>
+<body>     
    
      <header>
         <div class="logo">
-          <a href="#">Youtube Transcript Summarizer</a>
+            <a href="index.jsp">Youtube Transcript Summarizer</a>  
         </div>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.jsp">Home</a></li>
+            <li><a href="about.jsp">About</a></li>
+            <li><a href="contact.jsp">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -31,11 +31,15 @@
       <section class="body-section">
         <div class="container">
           <h1>Enter URL</h1>
+          
           <form action="CaptionGrabberServelet" method="GET">
-            <input type="text" id="videoUrl" name="videoUrl" placeholder="Paste your URL here">
+            <input type="text" placeholder="Paste your URL here" name="videoUrl">
+            <br>
+            <br>
             <button type="submit">Submit</button>
           </form>
-          <!-- <p>Cover photo link</p> -->
+          
+         
         </div>
         
     
